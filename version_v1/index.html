@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monitoring Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>GEXA Server Monitoring Dashboard</h1>
+
+  <div style="margin-bottom: 10px;">
+    <label>
+      <input type="checkbox" id="historyToggle" />
+      Show Full History
+    </label>
+  </div>
+  
+  <div class="card">
+    <h2>CPU Usage</h2>
+    <canvas id="cpuChart" width="1900px" height="700px"></canvas>
+  <div id="cpuStatus">Loading...</div> <!-- This shows latest CPU % -->
+  </div>
+
+  <div style="margin-bottom: 10px;">
+    <label>
+      <input type="checkbox" id="historyToggle" />
+      Show Full History
+    </label>
+  </div>
+  
+  <div class="card">
+    <h2>RAM Usages</h2>
+    <canvas id="ramChart" width="1900px" height="700px"></canvas>
+    <div id="ramStatus">Loading...</div>
+  </div>
+
+  <div class="card">
+    <h2>Disk Usage</h2>
+    <div id="disk">Loading...</div>
+  </div>
+
+  <div class="card">
+    <h2>Last Boot Time</h2>
+    <div id="boot">Loading...</div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

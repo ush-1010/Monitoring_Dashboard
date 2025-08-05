@@ -1,0 +1,25 @@
+Let me know if you want:
+
+Toggle between Live/History
+
+Export chart as image
+
+Multiple server dropdowns
+
+Or WebSocket support for real-time updates
+
+
+dataPoints.forEach(point => {
+  const ts = formatTime(point.Time);
+  cpuData.labels.push(ts);
+  cpuData.datasets[0].data.push(point.CPU);
+});
+
+
+
+dataPoints.forEach(point => {
+  const ts = formatTime(point.Time);
+  ramData.labels.push(ts);
+  const used = (100 - (point.RAMFreeGB / point.TotalRAMGB) * 100).toFixed(2);
+  ramData.datasets[0].data.push(parseFloat(used));
+});

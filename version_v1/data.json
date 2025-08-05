@@ -1,0 +1,582 @@
+﻿[
+    {
+        "RAMFreeGB":  0.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  108.8,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  30.52,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-30T09:35:21.4999310+05:30",
+        "Time":  "2025-07-30T20:43:37.6702777+05:30",
+        "CPU":  3.07
+    },
+    {
+        "RAMFreeGB":  20.7,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.15,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T08:46:00.7544164+05:30",
+        "CPU":  0.71
+    },
+    {
+        "RAMFreeGB":  19.15,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.51,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T08:47:37.6948227+05:30",
+        "CPU":  19.16
+    },
+    {
+        "RAMFreeGB":  18.75,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.5,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T08:51:11.8965950+05:30",
+        "CPU":  13.4
+    },
+    {
+        "RAMFreeGB":  18.62,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:03:22.7073403+05:30",
+        "CPU":  2.63
+    },
+    {
+        "RAMFreeGB":  18.61,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:03:27.9457667+05:30",
+        "CPU":  5.46
+    },
+    {
+        "RAMFreeGB":  18.6,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:03:34.2327877+05:30",
+        "CPU":  5.65
+    },
+    {
+        "RAMFreeGB":  18.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:05:55.1664255+05:30",
+        "CPU":  10.96
+    },
+    {
+        "RAMFreeGB":  18.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:06:00.9564055+05:30",
+        "CPU":  4.01
+    },
+    {
+        "RAMFreeGB":  18.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:06:06.7403384+05:30",
+        "CPU":  1.15
+    },
+    {
+        "RAMFreeGB":  18.54,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.48,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:06:10.0314449+05:30",
+        "CPU":  2.57
+    },
+    {
+        "RAMFreeGB":  18.59,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:06:22.5987462+05:30",
+        "CPU":  4.92
+    },
+    {
+        "RAMFreeGB":  18.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:07:43.0485718+05:30",
+        "CPU":  12.69
+    },
+    {
+        "RAMFreeGB":  18.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.48,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:08:14.2372841+05:30",
+        "CPU":  7.97
+    },
+    {
+        "RAMFreeGB":  18.5,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.49,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T09:17:22.2077900+05:30",
+        "CPU":  10.89
+    },
+    {
+        "RAMFreeGB":  15.1,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.23,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T11:15:04.6449801+05:30",
+        "CPU":  2.33
+    },
+    {
+        "RAMFreeGB":  15.13,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.23,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T11:15:14.0857393+05:30",
+        "CPU":  3.52
+    },
+    {
+        "RAMFreeGB":  15.12,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.23,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T11:15:28.3968658+05:30",
+        "CPU":  3.34
+    },
+    {
+        "RAMFreeGB":  15.15,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.23,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T11:19:41.3888330+05:30",
+        "CPU":  3.81
+    },
+    {
+        "RAMFreeGB":  13.56,
+        "TotalRAMGB":  23.84,
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  118.16,
+                         "SizeGB":  400.64
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  22.02,
+                         "SizeGB":  250
+                     },
+                     {
+                         "DeviceID":  "F:",
+                         "FreeGB":  42.21,
+                         "SizeGB":  200
+                     },
+                     {
+                         "DeviceID":  "G:",
+                         "FreeGB":  20.92,
+                         "SizeGB":  100
+                     }
+                 ],
+        "LastBoot":  "2025-07-31T08:44:33.5000000+05:30",
+        "Time":  "2025-07-31T14:04:03.1847878+05:30",
+        "CPU":  3.26
+    }
+]

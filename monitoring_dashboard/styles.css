@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 40px;
+  font-size: 18px;
+}
+
+.low-space {
+  color: red;
+  font-weight: bold;
+}
+
+.disk-item {
+  margin-bottom: 5px;
+}

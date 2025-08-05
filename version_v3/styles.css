@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fb;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.card h2 {
+  margin-top: 0px;
+  color: #34495e;
+}
+
+.chart-container {
+  position: relative;
+  height: 300px;
+  width: 100%;
+}
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.disk-item {
+  margin-bottom: 5px;
+}
+
+.low-space {
+  color: red;
+  font-weight: bold;
+}
