@@ -118,3 +118,51 @@ html, body {
   margin-bottom: 8px;
   width: 100%;
 }
+
+#statusPanel {
+  width: 330px;
+  background: #f0f0f0;
+  border-left: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+#statusPanel h3 {
+  margin-top: 0;
+}
+
+#statusList {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.status-entry {
+  margin-bottom: 14px;
+  background: white;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.status-label {
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.bar {
+  background-color: #ccc;
+  height: 12px;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  height: 100%;
+  text-align: right;
+  color: white;
+  font-size: 10px;
+  padding-right: 5px;
+  line-height: 12px;
+  border-radius: 6px;
+}
