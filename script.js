@@ -84,8 +84,48 @@ function formatTime(timestamp) {
     ).join('');
   }
 
+	function updateStatusPanel(data) {
+	const container = document.getElementById('statusList');
+	container.innerHTML = '';
+  
+	const latestByHost = {};
+	data.forEach(entry => {
+	  latestByHost[entry.Hostname] = entry;
+	});
+  
+	// For Last Boot, calculate max time delta
+	const now = new Date();
+	const allBoots = Object.values(latestByHost).map(e => new Date(e.LastBoot));
+	const maxDays = Math.max(...allBoots.map(bt => Math.floor((now - bt) / (1000 * 60 * 60 * 24))) || 1);
+  
+	Object.values(latestByHost).forEach(entry => {
+	  const cpu = entry.CPU.toFixed(2);
+	  const ramUsed = ((1 - entry.RAMFreeGB / entry.TotalRAMGB) * 100).toFixed(2);
+  
+	  const disks = Array.isArray(entry.Disk) ? entry.Disk : [entry.Disk];
+	  const maxDiskUsed = Math.max(...disks.map(d => ((d.SizeGB - d.FreeGB) / d.SizeGB * 100).toFixed(2)));
+  
+	  const bootDays = Math.floor((now - new Date(entry.LastBoot)) / (1000 * 60 * 60 * 24));
+	  const bootPercent = ((bootDays / maxDays) * 100).toFixed(2);
+  
+	  const makeBar = (val, color = '#3e95cd') => `
+		<div class="bar">
+		  <div class="bar-fill" style="width:${val}%; background:${color}">${val}%</div>
+		</div>`;
+  
+	  container.innerHTML += `
+		<div class="status-entry">
+		  <div class="status-label">${entry.Hostname}</div>
+		  <div>CPU Usage: ${makeBar(cpu, cpu > 70 ? 'red' : '#3e95cd')}</div>
+		  <div>RAM Usage: ${makeBar(ramUsed, ramUsed > 75 ? 'darkred' : '#8e5ea2')}</div>
+		  <div>Disk Usage: ${makeBar(maxDiskUsed, maxDiskUsed > 80 ? 'orangered' : '#4caf50')}</div>
+		  <div>Last Boot: ${makeBar(bootPercent, '#9e9e9e')}</div>
+		</div>`;
+	});
+  }
+
 	const charts = {}; // Stores Chart.js instances per hostname
-  const hostCards = {}; // Track if card already rendered
+	const hostCards = {}; // Track if card already rendered
   
   function loadData() {
     fetch('data_1.json')
