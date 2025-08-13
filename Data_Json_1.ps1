@@ -1,4 +1,4 @@
-﻿$serversList = "E:\acer\astro\2025\Poject\Monitor\ServerList.txt"
+﻿$serversList = "C:\Share_Details\ServerList.txt"
 
 $servers = get-content $serversList
 
@@ -35,7 +35,7 @@ foreach ($server in $servers) {
 }
 
 # Load old history if exists
-$jsonPath = "E:\acer\astro\2025\Poject\Monitor\data_1.json"
+$jsonPath = "C:\Share_Details\\data_1.json"
 if (Test-Path $jsonPath) {
     $history = Get-Content $jsonPath | ConvertFrom-Json
     if ($history -isnot [System.Collections.IEnumerable] -or $history -is [System.Management.Automation.PSObject]) {
