@@ -1,0 +1,33 @@
+USE [master];
+GO
+
+CREATE LOGIN [YourNewLoginName] WITH PASSWORD = N'YourStrongPasswordHere',
+DEFAULT_DATABASE = [InfraMonitorDB], -- The default database for this login
+CHECK_EXPIRATION = OFF, -- Set to ON for password expiration policy
+CHECK_POLICY = ON; -- Enforce password policy (complexity, length)
+GO
+
+
+USE [InfraMonitorDB];
+GO
+-- Grant read and write access
+ALTER ROLE [db_datareader] ADD MEMBER [monitor];
+ALTER ROLE [db_datawriter] ADD MEMBER [monitor];
+
+-- Optional: If the user needs to execute stored procedures
+GRANT EXECUTE TO [monitor];
+GO
+
+
+USE [master];
+GO
+ALTER SERVER ROLE [sysadmin] DROP MEMBER [monitor];
+GO
+
+USE [InfraMonitorDB];
+GO
+
+ALTER ROLE [db_owner] ADD MEMBER [monitor];
+GO
+
+
