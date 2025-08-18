@@ -1,9 +1,0 @@
-Let me know if you want:
-
-Toggle between Live/History
-
-Export chart as image
-
-Multiple server dropdowns
-
-Or WebSocket support for real-time updates
