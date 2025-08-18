@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Multi-Machine-Monitor_v2</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1 id="pageTitle">System_Monitor</h1>
+
+  <div id="mainWrapper">
+    <!-- Left scrollable chart area -->
+    <div id="scrollArea">
+      <div id="machineStatus"></div>
+    </div>
+
+    <!-- Disk Usage Panel -->
+    <div id="diskPanel">
+      <h3>Disk Usage Summary</h3>
+        <select id="diskSort">
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+      </select>
+      <div id="diskList"></div>
+    </div>
+
+    <!-- Right fixed RAM panel -->
+    <div id="ramPanel">
+      <h3>RAM Usage Summary</h3>
+      <select id="ramSort">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+      <div id="ramList"></div>
+    </div>
+  </div>
+
+  <div id="statusPanel">
+    <h3>Server Summary</h3>
+    <div id="statusList"></div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
