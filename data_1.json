@@ -1186,5 +1186,137 @@
         "PSComputerName":  "SYS01.test.local",
         "RunspaceId":  "ba50417c-2e7c-4ebd-9282-6d87fe0f29bf",
         "PSShowComputerName":  true
+    },
+    {
+        "RAMFreeGB":  6.13,
+        "TotalRAMGB":  8,
+        "Hostname":  "DC01",
+        "LastBoot":  "2025-08-13T21:59:57.5000000+05:30",
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  13.13,
+                         "SizeGB":  29.4
+                     },
+                     {
+                         "DeviceID":  "D:",
+                         "FreeGB":  9.97,
+                         "SizeGB":  10
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  9.97,
+                         "SizeGB":  10
+                     }
+                 ],
+        "Time":  "2025-08-14T18:30:14.4822722+05:30",
+        "CPU":  1.91,
+        "PSComputerName":  "DC01.test.local",
+        "RunspaceId":  "0de31c50-a5b8-413a-a9d8-85e957d849a7",
+        "PSShowComputerName":  true
+    },
+    {
+        "RAMFreeGB":  2.68,
+        "TotalRAMGB":  4,
+        "Hostname":  "SYS01",
+        "LastBoot":  "2025-08-13T21:59:59.5000000+05:30",
+        "Disk":  {
+                     "DeviceID":  "C:",
+                     "FreeGB":  2.19,
+                     "SizeGB":  29.37
+                 },
+        "Time":  "2025-08-14T18:30:19.5541095+05:30",
+        "CPU":  0,
+        "PSComputerName":  "SYS01.test.local",
+        "RunspaceId":  "b06cd8e1-2d7d-473b-bbf0-8932d8fda2e1",
+        "PSShowComputerName":  true
+    },
+    {
+        "RAMFreeGB":  6.08,
+        "TotalRAMGB":  8,
+        "Hostname":  "DC01",
+        "LastBoot":  "2025-08-13T21:59:57.5000000+05:30",
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  13.13,
+                         "SizeGB":  29.4
+                     },
+                     {
+                         "DeviceID":  "D:",
+                         "FreeGB":  9.97,
+                         "SizeGB":  10
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  9.97,
+                         "SizeGB":  10
+                     }
+                 ],
+        "Time":  "2025-08-14T18:34:09.0284925+05:30",
+        "CPU":  1.77,
+        "PSComputerName":  "DC01.test.local",
+        "RunspaceId":  "f0cfe768-ba5d-4e9f-bc39-762ccef21bf4",
+        "PSShowComputerName":  true
+    },
+    {
+        "RAMFreeGB":  2.66,
+        "TotalRAMGB":  4,
+        "Hostname":  "SYS01",
+        "LastBoot":  "2025-08-13T21:59:59.5000000+05:30",
+        "Disk":  {
+                     "DeviceID":  "C:",
+                     "FreeGB":  2.19,
+                     "SizeGB":  29.37
+                 },
+        "Time":  "2025-08-14T18:34:11.7575118+05:30",
+        "CPU":  0.71,
+        "PSComputerName":  "SYS01.test.local",
+        "RunspaceId":  "c7ac8632-8aa4-4d14-9d06-ee6cae553e18",
+        "PSShowComputerName":  true
+    },
+    {
+        "RAMFreeGB":  6.22,
+        "TotalRAMGB":  8,
+        "Hostname":  "DC01",
+        "LastBoot":  "2025-08-17T13:27:14.5000000+05:30",
+        "Disk":  [
+                     {
+                         "DeviceID":  "C:",
+                         "FreeGB":  12.55,
+                         "SizeGB":  29.4
+                     },
+                     {
+                         "DeviceID":  "D:",
+                         "FreeGB":  9.97,
+                         "SizeGB":  10
+                     },
+                     {
+                         "DeviceID":  "E:",
+                         "FreeGB":  9.97,
+                         "SizeGB":  10
+                     }
+                 ],
+        "Time":  "2025-08-17T14:32:03.0934368+05:30",
+        "CPU":  0.85,
+        "PSComputerName":  "DC01.test.local",
+        "RunspaceId":  "35981a00-3e53-46de-826c-a5f5db1a3881",
+        "PSShowComputerName":  true
+    },
+    {
+        "RAMFreeGB":  1.94,
+        "TotalRAMGB":  4,
+        "Hostname":  "SYS01",
+        "LastBoot":  "2025-08-17T13:27:20.5000000+05:30",
+        "Disk":  {
+                     "DeviceID":  "C:",
+                     "FreeGB":  2.14,
+                     "SizeGB":  29.37
+                 },
+        "Time":  "2025-08-17T14:32:05.9712367+05:30",
+        "CPU":  0.44,
+        "PSComputerName":  "SYS01.test.local",
+        "RunspaceId":  "9671e5fa-c838-4977-a6ec-d572493307ff",
+        "PSShowComputerName":  true
     }
 ]
