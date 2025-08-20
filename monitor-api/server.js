@@ -2,6 +2,7 @@ const express = require('express');
 const sql = require('mssql');
 const path = require('path');
 
+// Create Express app and configure view engine
 const app = express();
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
