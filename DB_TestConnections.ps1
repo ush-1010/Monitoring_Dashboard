@@ -1,8 +1,10 @@
-﻿$serverName = "127.0.0.1"
-$databaseName = "InfraMonitorDB"
-$username = "monitor"
-$password = "NewPass123"
-$connectionString = "Data Source=$serverName;Initial Catalog=$databaseName;User ID=$username;Password=$password;TrustServerCertificate=True;"
+﻿$serverName = "castel"
+#$databaseName = "InfraMonitorDB"
+#$username = "monitor"
+#$password = "NewPass123"
+#$connectionString = "Data Source=$serverName;Initial Catalog=$databaseName;User ID=$username;Password=$password;TrustServerCertificate=True;"
+
+$connectionString = "Server=$serverName;Database=InfraMonitorDB;Integrated Security=True;TrustServerCertificate=True;"
 
 
 $sqlConnection = New-Object System.Data.SqlClient.SqlConnection
