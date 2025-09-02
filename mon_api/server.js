@@ -7,16 +7,31 @@ const app = express();
 app.use(cors());
 
 // Database connection config
+/*
 const dbConfig = {
   user: "monitor",
   password: "NewPass123",
-  server: "castel",     // Your DB server
+  server: "127.16.20.100",     // Your DB server
   database: "InfraMonitorDB",
   options: {
     encrypt: false,
     trustServerCertificate: true
   }
 };
+*/
+
+// Database connection config updated for Windows Authentication
+const dbConfig = {
+  server: "castel",      // Your DB server
+  database: "InfraMonitorDB",
+  options: {
+    encrypt: false,
+    trustServerCertificate: true,
+    trustedConnection: true // <--- Use this for Windows Authentication
+  }
+};
+
+
 
 // GET API for dashboard
 app.get("/api/monitor", async (req, res) => {
