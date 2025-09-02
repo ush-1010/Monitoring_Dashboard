@@ -127,7 +127,7 @@ function formatTime(timestamp) {
 	const charts = {}; // Stores Chart.js instances per hostname
 	const hostCards = {}; // Track if card already rendered
   
-  function loadData() {
+  async function loadData() {
     fetch('data_1.json')
       .then(res => res.json())
       .then(fData => {
@@ -142,9 +142,9 @@ function formatTime(timestamp) {
   
         Object.entries(grouped).forEach(([hostname, entries], index) => {
           const latest = entries.at(-1);
-          const cpuVals = entries.map(e => e.CPU.toFixed(2));
+          const cpuVals = entries.map(e => e.CPU_Percent.toFixed(2));
           const ramVals = entries.map(e => ((1 - e.RAMFreeGB / e.TotalRAMGB) * 100).toFixed(2));
-          const labels = entries.map(e => formatTime(e.Time));
+          const labels = entries.map(e => formatTime(e.CaptureTime));
   
           const isRamLow = ramVals.at(-1) > 75;
           const isCpuHigh = cpuVals.at(-1) > 70;
