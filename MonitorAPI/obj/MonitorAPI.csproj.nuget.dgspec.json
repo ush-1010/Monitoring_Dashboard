@@ -1,0 +1,79 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\acer\\astro\\2025\\Project\\Monitor\\MonitorAPI\\MonitorAPI.csproj": {}
+  },
+  "projects": {
+    "E:\\acer\\astro\\2025\\Project\\Monitor\\MonitorAPI\\MonitorAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\acer\\astro\\2025\\Project\\Monitor\\MonitorAPI\\MonitorAPI.csproj",
+        "projectName": "MonitorAPI",
+        "projectPath": "E:\\acer\\astro\\2025\\Project\\Monitor\\MonitorAPI\\MonitorAPI.csproj",
+        "packagesPath": "C:\\Users\\knight\\.nuget\\packages\\",
+        "outputPath": "E:\\acer\\astro\\2025\\Project\\Monitor\\MonitorAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\knight\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
