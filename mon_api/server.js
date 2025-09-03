@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 
 // Database connection config
-/*
+
 const dbConfig = {
   user: "monitor",
   password: "NewPass123",
@@ -18,8 +18,8 @@ const dbConfig = {
     trustServerCertificate: true
   }
 };
-*/
 
+/*
 // Database connection config updated for Windows Authentication
 const dbConfig = {
   server: "castel",      // Your DB server
@@ -30,7 +30,7 @@ const dbConfig = {
     trustedConnection: true // <--- Use this for Windows Authentication
   }
 };
-
+*/
 
 
 // GET API for dashboard

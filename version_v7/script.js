@@ -136,7 +136,7 @@ const THRESHOLDS = {
   
   // Load data from API and render dashboard
   function loadData() {
-	fetch('http://localhost:3000/api/monitor')
+	fetch('http://localhost:5253/api/Monitor')
 	  .then(res => res.json())
 	  .then(fData => {
 		const grouped = {};

@@ -1,22 +1,28 @@
-const sql = require('mssql/msnodesqlv8');
 
-const config = {
+const express = require("express");
+const sql = require("mssql/msnodesqlv8");
+const cors = require("cors");
+const app = express();
+app.use(cors());
+
+
+const dbConfig = {
     server: 'castel', // e.g., 'localhost' or 'SERVER_NAME\\INSTANCE_NAME'
     database: 'InfraMonitorDB',
     driver: 'msnodesqlv8', // <-- Add this line
     options: {
         trustedConnection: true, // Use Windows Authentication
-        //encrypt: true, // Recommended for production environments
-        //trustServerCertificate: true // Change to false in production if you have a valid certificate
+        encrypt: false, // Recommended for production environments
+        trustServerCertificate: true // Change to false in production if you have a valid certificate
     }
 };
 
 async function connectAndQuery() {
     try {
-        await sql.connect(config);
+        await sql.connect(dbConfig);
         console.log('Connected to SQL Server using Windows Authentication');
 
-        const result = await sql.query`SELECT * FROM YourTable`;
+        const result = await sql.query`SELECT @@VERSION`;
         console.log('Query results:', result.recordset);
 
     } catch (err) {
