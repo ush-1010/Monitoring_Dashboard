@@ -22,6 +22,7 @@ $DiskStageRows   = New-Object System.Collections.Generic.List[Object]
 # 1. COLLECT DATA FROM ALL SERVERS
 # ===============================================
 foreach ($server in $servers) {
+    $session = $null
     try {
         $newPoint = Invoke-Command -ComputerName $server -ScriptBlock {
             $cpu = (Get-Counter '\Processor(_Total)\% Processor Time' -SampleInterval 1 -MaxSamples 2 |
@@ -78,6 +79,9 @@ foreach ($server in $servers) {
 
     } catch {
         Write-Host " Failed for $server : $_"
+    }
+    finally {
+        if ($session) { Remove-PSSession $session }
     }
 }
 
@@ -174,5 +178,6 @@ $mergeCmd.CommandText = "EXEC dbo.MergeServerAndDiskData"
 $mergeCmd.ExecuteNonQuery() | Out-Null
 
 $connection.Close()
+$connection.Dispose()
 
-#Write-Host "🚀 Bulk Insert + Merge Complete: $($ServerStageRows.Count) servers, $($DiskStageRows.Count) disks."
+Write-Host "🚀 Bulk Insert + Merge Complete: $($ServerStageRows.Count) servers, $($DiskStageRows.Count) disks."
