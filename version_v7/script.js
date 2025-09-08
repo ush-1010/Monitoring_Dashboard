@@ -32,7 +32,10 @@ const THRESHOLDS = {
 	const diskList = document.getElementById('diskList');
 	const latestByHost = {};
   
-	data.forEach(entry => latestByHost[entry.Hostname] = entry);
+	data.forEach(entry => {
+		if (!entry.Hostname || entry.Hostname.trim() === "") return; // skip null
+		latestByHost[entry.Hostname] = entry;
+	});
   
 	const groupedDisks = Object.entries(latestByHost).map(([hostname, entry]) => {
 	  const disks = Array.isArray(entry.Disk) ? entry.Disk : [entry.Disk];
@@ -73,7 +76,10 @@ const THRESHOLDS = {
 	const ramList = document.getElementById('ramList');
 	const latestByHost = {};
   
-	data.forEach(entry => latestByHost[entry.Hostname] = entry);
+	data.forEach(entry => {
+		if (!entry.Hostname || entry.Hostname.trim() === "") return; // skip null
+		latestByHost[entry.Hostname] = entry;
+	});
   
 	const list = Object.values(latestByHost).map(e => {
 	  const percent = ((1 - e.RAMFreeGB / e.TotalRAMGB) * 100).toFixed(2);
@@ -99,19 +105,30 @@ const THRESHOLDS = {
 	container.innerHTML = '';
   
 	const latestByHost = {};
-	data.forEach(entry => latestByHost[entry.Hostname] = entry);
+
+	data.forEach(entry => {
+		if (!entry.Hostname || entry.Hostname.trim() === "") return; // skip null host
+		if (!entry.LastBoot) return; // skip null boot time	
+		latestByHost[entry.Hostname] = entry;
+	});
   
 	const now = new Date();
-	const allBoots = Object.values(latestByHost).map(e => new Date(e.LastBoot));
-	const maxDays = Math.max(...allBoots.map(bt => Math.floor((now - bt) / (1000 * 60 * 60 * 24))) || 1);
+	const allBoots = Object.values(latestByHost).filter(e => e.LastBoot).map(e => new Date(e.LastBoot));
+	const maxDays = allBoots.length > 0
+		? Math.max(...allBoots.map(bt => Math.floor((now - bt) / (1000 * 60 * 60 * 24)))) : 1;
   
 	Object.values(latestByHost).forEach(entry => {
+		// skip bad or incomplete rows
+		if (!entry.Hostname || entry.Hostname.trim() === "") return;
+		if (!entry.LastBoot) return;
+		if (entry.CPU_Percent == null || entry.RAMFreeGB == null || entry.TotalRAMGB == null) return;
 	  const cpu = entry.CPU_Percent.toFixed(2);
 	  const ramUsed = ((1 - entry.RAMFreeGB / entry.TotalRAMGB) * 100).toFixed(2);
 	  const disks = Array.isArray(entry.Disk) ? entry.Disk : [entry.Disk];
 	  const maxDiskUsed = Math.max(...disks.map(d => ((d.SizeGB - d.FreeGB) / d.SizeGB * 100).toFixed(2)));
   
-	  const bootDays = Math.floor((now - new Date(entry.LastBoot)) / (1000 * 60 * 60 * 24));
+	  const bootDays = entry.LastBoot
+	  	? Math.floor((now - new Date(entry.LastBoot)) / (1000 * 60 * 60 * 24)): 0;
 	  const bootPercent = ((bootDays / maxDays) * 100).toFixed(2);
   
 	  const makeBar = (val, color = '#3e95cd') => `
@@ -141,8 +158,9 @@ const THRESHOLDS = {
 	  .then(fData => {
 		const grouped = {};
 		fData.forEach(entry => {
-		  if (!grouped[entry.Hostname]) grouped[entry.Hostname] = [];
-		  grouped[entry.Hostname].push(entry);
+		  if (!entry.Hostname || entry.Hostname.trim() === "") return; // skill null hostnames
+		  	grouped[entry.Hostname] = grouped[entry.Hostname] || [];
+		  	grouped[entry.Hostname].push(entry);
 		});
   
 		const container = document.getElementById('machineStatus');

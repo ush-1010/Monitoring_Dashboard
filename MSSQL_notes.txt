@@ -31,3 +31,8 @@ ALTER ROLE [db_owner] ADD MEMBER [monitor];
 GO
 
 SELECT @@VERSION;
+
+
+
+	DELETE FROM Customers
+	WHERE CustomerID = 101;
