@@ -1,4 +1,22 @@
-﻿# ===============================================
+﻿
+# ===============================================
+# EXECUTION UNDER SPECIFIC USER (Task Scheduler)
+# ===============================================
+$runAsUser = Get-Content "C:\Share_Details\RunAsUser.txt"
+$securePass = Import-Clixml "C:\Share_Details\RunAsPassword.xml"
+$RunAsCredential = New-Object System.Management.Automation.PSCredential ($runAsUser, $securePass)
+
+'''
+if (-not $env:RUNAS_FLAG) {
+    $scriptPath = $MyInvocation.MyCommand.Definition
+    Start-Process powershell.exe -Credential $RunAsCredential -ArgumentList "-ExecutionPolicy Bypass -NoProfile -File `"$scriptPath`"" -Wait
+    exit
+}
+$env:RUNAS_FLAG = "1"
+
+'''
+
+# ===============================================
 # CONFIGURATION
 # ===============================================
 $serversList  = "C:\Share_Details\ServerList.txt"
@@ -12,6 +30,7 @@ $connectionString = "Data Source=$dbServer;Database=$databaseName;User ID=$usern
 
 Add-Type -AssemblyName "System.Data"
 
+
 # ===============================================
 # COLLECTIONS
 # ===============================================
@@ -24,7 +43,7 @@ $DiskStageRows   = New-Object System.Collections.Generic.List[Object]
 foreach ($server in $servers) {
     $session = $null
     try {
-        $newPoint = Invoke-Command -ComputerName $server -ScriptBlock {
+        $newPoint = Invoke-Command -Credential $RunAsCredential -ComputerName $server -ScriptBlock {
             $cpu = (Get-Counter '\Processor(_Total)\% Processor Time' -SampleInterval 1 -MaxSamples 2 |
                    Select-Object -ExpandProperty CounterSamples |
                    Measure-Object -Property CookedValue -Average).Average
