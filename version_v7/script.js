@@ -180,7 +180,14 @@ function loadData() {
 			const container = document.getElementById('machineStatus');
 			// container.innerHTML = ''; 											// --- added to clear previous on new search
 			// hostCards = {}; 																// <--- added to reset cards on new search
-			//Object.keys(hostCards).forEach(k => delete hostCards[k]); // reset cards <--- added
+			// --- REMOVE CARDS NOT MATCHING SEARCH TERM ---
+			Object.keys(hostCards).forEach(hostname => {
+				if (!grouped[hostname]) {
+						const card = document.getElementById(`card-${hostname}`);
+						if (card) card.remove();
+						delete hostCards[hostname];
+				}
+			});
 
 			// --- ADDED “No results” indicator ---
 			const noResultsDiv = document.getElementById('noResults');
