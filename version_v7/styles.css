@@ -23,6 +23,7 @@ html, body {
   padding: 5px;
   max-width: 650px;
   background: #eef;
+  height: 100%;
 }
 
 #machineStatus {
@@ -55,7 +56,7 @@ html, body {
   margin-left: 5px;
 }
 
-
+/* Disk Panel */
 #diskPanel {
   width: 400px;
   background: #f0f0f0;
@@ -92,13 +93,14 @@ html, body {
   font-size: 13px;
 }
 
-
+/* RAM Panel */
 #ramPanel {
   width: 300px;
   background: #f0f0f0;
   border-left: 1px solid #ccc;
   padding: 10px;
   overflow-y: auto;
+  height: 100%;
 }
 
 #ramPanel h3 {
@@ -119,6 +121,7 @@ html, body {
   width: 100%;
 }
 
+/* Status Panel */
 #statusPanel {
   width: 330px;
   background: #f0f0f0;

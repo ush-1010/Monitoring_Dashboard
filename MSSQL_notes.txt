@@ -32,6 +32,19 @@ GO
 
 SELECT @@VERSION;
 
+SELECT 
+    f.name AS ForeignKeyName,
+    OBJECT_NAME(f.parent_object_id) AS ReferencingTableName
+FROM 
+    sys.foreign_keys AS f
+WHERE 
+    f.referenced_object_id = OBJECT_ID('ServerStatus');
+
+
+USE InfraMonitorDB;
+GO
+
+TRUNCATE TABLE ServerStatus;
 
 
 	DELETE FROM Customers

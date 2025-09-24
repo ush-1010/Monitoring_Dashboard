@@ -10,6 +10,15 @@
 <body>
   <h1 id="pageTitle">System_Monitor</h1>
 
+  <!-- Hostname Search -->
+  <div style="margin:10px 0;">
+    <input type="text" id="searchHost" placeholder="Search hostname..." style="padding:5px; width:200px;">
+  </div>
+
+  <div id="noResults" style="display:none; color:red; margin-bottom:10px;">
+    No hosts match your search.
+  </div>
+
   <div id="mainWrapper">
     <!-- Left scrollable chart area -->
     <div id="scrollArea">
