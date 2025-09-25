@@ -10,7 +10,7 @@ app.use(cors());
 const dbConfig = {
   user: "monitor",
   password: "NewPass123",
-  server: "127.16.20.100",     // Your DB server
+  server: "172.16.20.100",     // Your DB server
   database: "InfraMonitorDB",
   options: {
     encrypt: false,
