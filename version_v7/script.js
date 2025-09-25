@@ -314,9 +314,9 @@ function loadData() {
 			scrollArea.scrollTop = scrollPos;				// <--- added to restore scroll position
 		});
 
-		updateDiskPanel(fData);
-		updateRamPanel(fData);
-		updateStatusPanel(fData);
+		updateDiskPanel(filteredData);
+		updateRamPanel(filteredData);
+		updateStatusPanel(filteredData);
 	  });
 }
   
