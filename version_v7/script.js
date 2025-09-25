@@ -16,7 +16,14 @@ const THRESHOLDS = {
 	DISK_LOW: 20       // Disk free % below this is considered low
 };
 
+// ========================
+// API CONFIGURATION
+// ========================
+const API_URL = 'http://localhost:3000/api/monitor';
+
+// ========================
 // preserve scroll position
+// ========================
 let scrollPos = 0;
 const scrollArea = document.getElementById('scrollArea');
 scrollArea.addEventListener('scroll', () => {
@@ -160,7 +167,7 @@ const hostCards = {};
   
 // Load data from API and render dashboard
 function loadData() {
-	fetch('http://localhost:3000/api/monitor')
+	fetch(API_URL)
 	  .then(res => res.json())
 	  .then(fData => {
 			// --- ADDED SEARCH FILTER (case-insensitive) ---
@@ -326,11 +333,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	setInterval(loadData, 10000);
   
 	document.getElementById('diskSort').addEventListener('change', () => {
-	  fetch('http://localhost:3000/api/monitor').then(res => res.json()).then(updateDiskPanel);
+	  fetch(API_URL).then(res => res.json()).then(updateDiskPanel);
 	});
   
 	document.getElementById('ramSort').addEventListener('change', () => {
-	  fetch('http://localhost:3000/api/monitor').then(res => res.json()).then(updateRamPanel);
+	  fetch(API_URL).then(res => res.json()).then(updateRamPanel);
 	});
 	// --- ADDED live search listener ---
 	document.getElementById('searchHost').addEventListener('input', () => {
